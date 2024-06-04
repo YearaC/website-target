@@ -35,6 +35,8 @@
 }
 
 .search{
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 600px;
     font-family: "inter_regular", Arial, sans-serif;
@@ -54,7 +56,7 @@
 }
 
 .nav-search{
-    
+    display: flex;
     align-items: center;
    
 
@@ -64,12 +66,16 @@
 
 
 .fa-magnifying-glass{
+    display: flex;
+    justify-content: center;
     position: relative;
     left: 50px;
     cursor: pointer;
 }
 
 .bi-camera{
+    display: flex;
+    justify-content: center;
     position: relative;
     right: 80px;
     height: 25px;
@@ -325,3 +331,150 @@ figure img{
 .yap{
     color: #42443E;
 }
+
+.head-bar{
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: none;
+    
+
+}
+
+
+@media (max-width:1200px){
+    .search{
+        width: 500px;
+        height: 60px;
+    
+        .model{
+            width: 500px;
+            height: 500px;
+            
+        }
+
+    }
+
+
+}
+
+
+@media(max-width:1000px){
+    .one-line{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-items: flex-start; 
+        align-items: flex-start;
+        width: 100%;
+        height: 110px;
+        padding: 0;
+       
+
+    }
+
+    .head-bar{
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+        
+        
+    }
+    
+    .target{
+        display: flex;
+        justify-items: flex-start;
+    }
+
+    .orange{
+        display: flex;
+        position: relative;
+        right: 70px;
+    }
+
+    .logo{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: 15px;
+    }
+
+    .nav-right{
+        display: none;
+    }
+
+    .model{
+        width: 500px;
+        height: 500px;
+        display: flex;
+        position: relative;
+        right: 500px;
+    }
+
+    
+}
+
+@media(max-width:800px){
+
+    .search{
+        height: 60px;
+        width: 300px;
+
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .out{
+        display: none;
+    }
+
+    .day-60{
+        border: solid 7px bisque;
+        color:#42443E;
+    }
+
+    .model{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 10rem;
+        
+    }
+
+    .ho{ margin-left: 25px;
+
+    }
+
+    
+
+}
+
+@media(max-width:600px){
+    .ho{
+        
+        margin-left: 100px;
+    }
+
+    .logo{
+        position: relative;
+        left: 10px;
+    }
+
+    .model{
+        position: relative;
+        left: 5rem;
+    }
+
+    
+
+   
+}
+
+
+
